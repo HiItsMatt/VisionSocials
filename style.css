@@ -5,6 +5,20 @@ body{
 .header{
     height: 70px;
     background-color: rgb(58, 58, 58);
+    position: relative;
 }
 
-.logo{}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
