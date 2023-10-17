@@ -70,6 +70,32 @@ h1 a{
     font-weight: bold;
 }
 
+
 .sidebar .option p{
     padding-left: 20px;
 }
+
+
+/* Style for links */
+p a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Style for visited links */
+  p a:visited {
+    color: purple;
+  }
+  
+  /* Style for hover links */
+  p a:hover {
+    text-decoration: none;
+  }
+  
+  /* Style for active links */
+  p a:active {
+    color: red;
+  }
+  
+
+  
