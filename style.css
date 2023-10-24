@@ -35,9 +35,9 @@ h1 a{
 }
 
 .sidebar {
-    top: 68px;
+    top: 67px;
     left: 0;
-    width: 300px;
+    width: 20%;
     border-color: #3d3d3d;
     border-style: solid;
     position: fixed;
@@ -45,20 +45,22 @@ h1 a{
     overflow: auto;
 }
 
-.sidebar .option{
+.sidebar .button{
     display: block;
     color: white;
     border-color: #3d3d3d;
+    background-color:black;
     border-style: solid;
     text-decoration: none;
     margin: 10px;
     border-radius: 20px;
 }
 
-.sidebar .button{
+.sidebar .button-clicked{
     display: block;
     color: white;
-    background-color: #3d3d3d;
+    border-color: white;
+    background-color:black;
     border-style: solid;
     text-decoration: none;
     margin: 10px;
@@ -69,37 +71,27 @@ h1 a{
     padding-left: 20px;
 }
 
-.sidebar .option .title{
-    display: block;
-    color: white;
-    border-color: #3d3d3d;
-    border-style: solid;
-    text-decoration: none;
-    margin: -2px;
-    border-radius: 20px;
-}
-
-.sidebar .option .title p{
-    font-weight: bold;
-}
-
-
-.sidebar .option p{
+.sidebar .button-clicked p{
     padding-left: 20px;
 }
 
 .post{
     position: relative;
-    top: 70px;
-    left: 305px;
-    width: 50%;
+    top: 71px;
     color: white;
     border-color: #3d3d3d;
     border-style: solid;
     text-decoration: none;
-    margin: 10px;
     border-radius: 20px;
     height: 400px;
+    margin-bottom: 10px;
+}
+
+.posts{
+    position: absolute;
+    width: 30%;
+    left: 20%;
+    margin-left: 15px;
 }
 
 
@@ -112,31 +104,97 @@ h1 a{
     border-color: #3d3d3d;
     border-style: solid;
     text-decoration: none;
-    margin: -2px;
+    margin: -3px;
     border-radius: 20px;
 }
 
+.content{
+    position: absolute;
+    top: 70px;
+    left: 20%;
+    right: 5%;
+    margin-left: 15px;
+}
+
+.content h1{
+    font-size: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+    border: 3px solid #3b3b3b;
+    padding: 10px;
+}
+
+th{
+    color: white;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15;
+}
+
+td{
+    color: white;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover .post{
+    border-color: white;
+}
+a:hover .post .title{
+    border-color: white;
+}
+
+a:hover .button{
+    background-color: #3d3d3d;
+}
+
+a:hover .button-clicked{
+    background-color: #3d3d3d;
+}
 
 /* Style for links */
 p a {
     text-decoration: none;
     color: white;
-  }
+}
   
-  /* Style for visited links */
-  p a:visited {
-    color: purple;
-  }
-  
-  /* Style for hover links */
-  p a:hover {
+/* Style for hover links */
+p a:hover {
     text-decoration: none;
-  }
+}
   
-  /* Style for active links */
-  p a:active {
+/* Style for active links */
+p a:active {
     color: red;
-  }
-  
+}
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
   
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+    background: grey;
+}
