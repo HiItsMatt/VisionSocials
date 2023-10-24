@@ -129,10 +129,24 @@ h1 a{
     font-weight: 400;
 }
 
+h2{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
 .center {
     margin: auto;
     width: 90%;
     padding: 10px;
+}
+
+.section{
+    border: #3d3d3d;
+    border-radius: 20px;
+    border-style: solid;
+    margin-top: 20px;
 }
 
 table .center {
