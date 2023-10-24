@@ -89,9 +89,15 @@ h1 a{
 
 .posts{
     position: absolute;
-    width: 30%;
+    width: 78%;
     left: 20%;
     margin-left: 15px;
+}
+
+.postcenter {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
 }
 
 
@@ -126,7 +132,12 @@ h1 a{
 .center {
     margin: auto;
     width: 90%;
-    border: 3px solid #3b3b3b;
+    padding: 10px;
+}
+
+table .center {
+    margin: auto;
+    width: 90%;
     padding: 10px;
 }
 
@@ -139,8 +150,13 @@ th{
 
 td{
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftcolumn{
+    text-align: right;
+    font-weight: 1000;
 }
 
 a {
